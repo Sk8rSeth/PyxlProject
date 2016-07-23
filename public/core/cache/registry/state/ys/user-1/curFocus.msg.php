@@ -1,2 +1,2 @@
 <?php
-return 'modx-resource-pagetitle';
+return 'ta';
