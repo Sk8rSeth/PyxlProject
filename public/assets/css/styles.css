@@ -1,0 +1,34 @@
+.hero {
+	background-image: url(/assets/img/big-ears-festival-2016-header.jpg);
+	background-size: cover;
+	background-position: center top;
+	height: 25rem;
+}
+
+.header {
+	background-color: blue;
+}
+
+.be_logo {
+}
+
+.slider {
+	background-color: teal;
+}
+
+.event_container {
+	height: 10rem;
+	background-color: yellow;
+}
+
+.bird_left {
+	background-color: green;
+}
+
+.bird_right {
+	background-color: purple;
+}
+
+.event_box {
+	background-color: orange;
+}
