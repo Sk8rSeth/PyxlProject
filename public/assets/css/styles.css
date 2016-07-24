@@ -2,33 +2,55 @@
 	background-image: url(/assets/img/big-ears-festival-2016-header.jpg);
 	background-size: cover;
 	background-position: center top;
-	height: 25rem;
+	height: 50rem;
+	position: relative;
 }
 
 .header {
 	background-color: blue;
+	padding-top: 35px;
 }
 
 .be_logo {
+	background-color: magenta;
+	height: 20rem;
+	background-image: url(/assets/img/big-ears-2016-logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.slider {
-	background-color: teal;
-}
 
-.event_container {
-	height: 10rem;
-	background-color: yellow;
-}
+@media screen and (min-width: 1024px) {
+	.hero{
+		height: 25rem;
+	}
 
-.bird_left {
-	background-color: green;
-}
+	.header {
+		height: 20rem;
+	}
 
-.bird_right {
-	background-color: purple;
-}
+	.event_container {
+		height: 10rem;
+		background-color: yellow;
+		transform: translatey(-60%);
+	}
 
-.event_box {
-	background-color: orange;
+	.bird_left {
+		background-color: green;
+	}
+
+	.bird_right {
+		background-color: purple;
+	}
+
+	.event_box {
+		text-align: center;
+		background-color: orange;
+		padding: 2rem;
+	}
+
+	.large-uncollapse {
+		background-color: grey;
+	}
+
 }

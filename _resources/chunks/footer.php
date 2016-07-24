@@ -1,11 +1,11 @@
 <footer>
 	<div class="row">
-		<div class="large-3"><h1>Stay Connected</h1></div>
-		<div class="large-6">
+		<div class="large-3 columns"><h1>Stay Connected</h1></div>
+		<div class="large-6 columns">
 			<input type="email">
-			<div class="btn">Sign Up</div>
+			<div class="button">Sign Up</div>
 		</div>
-		<div class="large-3">
+		<div class="large-3 columns">
 			<span class="social">fb</span>
 			<span class="social">twtr</span>
 			<span class="social">ig</span>
