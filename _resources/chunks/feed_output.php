@@ -1,4 +1,4 @@
 <div class="item">
-	<h3><a href="[[+link]]">[[+title]]</a></h3>
+	<h2><a href="[[+link]]">[[+title]]</a></h2 >
 	<div>[[+summary]]</div>
 </div>

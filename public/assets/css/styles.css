@@ -1,7 +1,8 @@
 /*
 *	Normalization
 */
-body {
+body {;
+	background-color: #f2f2f2;
 	font-family: "proxima-nova"
 	font-size: 16px;
 	line-height: 20px;
@@ -36,7 +37,7 @@ h2 {
 
 h3 {
 	font-family: "proxima-nova";
-	font-style: bold;
+	font-weight: bold;
 	font-size: 16px;
 	line-height: 20px; 
 	color: #000;
@@ -91,12 +92,10 @@ footer input[type=email] {
 }
 
 .header {
-	background-color: blue;
 	padding-top: 35px;
 }
 
 .be_logo {
-	background-color: magenta;
 	height: 20rem;
 	background-image: url(/assets/img/big-ears-2016-logo.png);
 	background-size: contain;
@@ -110,38 +109,51 @@ footer input[type=email] {
 
 @media screen and (min-width: 1024px) {
 	.hero{
-		height: 25rem;
+		height: 24rem;
 	}
 
 	.header {
 		height: 20rem;
 	}
 
+	.be_slider {
+		border-left: 1px solid #fff;
+		height: 12rem;
+		padding-left: 2rem;
+	}
+
 	.event_container {
 		height: 10rem;
-		background-color: yellow;
 		transform: translatey(-60%);
 	}
 
 	.bird_left {
-		background-color: green;
+		position: absolute;
+		top: 0;
+		left: 1rem;
 	}
 
 	.bird_right {
-		background-color: purple;
+		position: absolute;
+		top: 0;
+		right: 1rem;
 	}
 
 	.event_box {
 		text-align: center;
-		background-color: orange;
+		background-color: #f2f2f2;
 		padding: 2rem;
 		-webkit-box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25); 
 		-moz-box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25); 
 		box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25);
+		height: 10rem;
+	}
+
+	.event_box img {
+		margin: 0 2rem;
 	}
 
 	.feed_container {
-		background-color: #f2f2f2;
 	}
 
 }
