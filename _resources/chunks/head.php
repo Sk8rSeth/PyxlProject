@@ -6,5 +6,9 @@
 	<title>[[++site_name]] - [[*pagetitle]]</title>
 		<base href="[[++site_url]]" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css">
+	<script src="https://use.typekit.net/uxc6ivz.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<link rel="stylesheet" href="/assets/css/styles.css">
+
+	
 </head>

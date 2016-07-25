@@ -15,7 +15,7 @@
 			<div class="large-2 columns bird_right clearfix show-for-large"><img class="show-for-large" src="/assets/img/big-ears-bird-right.png" alt=""></div>
 		</div>
 
-	<div class="feed_container">
+	<div class="feed_container row">
 		[[$feed]]
 	</div>
 [[$footer]]

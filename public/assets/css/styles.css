@@ -1,3 +1,87 @@
+/*
+*	Normalization
+*/
+body {
+	font-family: "proxima-nova"
+	font-size: 16px;
+	line-height: 20px;
+	color: #686b72;
+}
+
+a {
+	color: #7f873f;
+	transition: border-bottom 1s;
+}
+
+a:hover {
+	color: #4c5438;
+	border-bottom: 1px solid #4c5438;
+}
+
+h1 {
+	font-family: "nimbus-sans-condensed";
+	font-size: 32px;
+	line-height: 37px; 
+	color: #000;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-family: "nimbus-sans-condensed";
+	font-size: 24px;
+	line-height: 27px; 
+	color: #000;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-family: "proxima-nova";
+	font-style: bold;
+	font-size: 16px;
+	line-height: 20px; 
+	color: #000;
+	margin: 6px 0;
+}
+
+.item {
+	border-bottom: 1px solid #d3d3d3;
+}
+
+footer {
+	background-image: url(/assets/img/big-ears-splash-footer.jpg);
+	background-size: cover;
+	padding: 25px;
+}
+
+footer input[type=email] {
+	color: #686b72;
+	display: inline;
+	max-width: 80%;
+	background-color: #f2f2f2;
+	border: 1px solid #fff;
+	padding: 10px 15px;
+	margin-right: 0;
+}
+
+.button {
+	font-family: "nimbus-sans-condensed";
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	background-color: #7f873f;
+	border: 1px solid #fff;
+	padding: 10px 15px !important;
+	transition: background-color 1s;
+	display: inline;
+}
+
+.button:hover {
+	background-color: #4c5438;
+}
+
+/*
+*	Mobile First Styles
+*/
 .hero {
 	background-image: url(/assets/img/big-ears-festival-2016-header.jpg);
 	background-size: cover;
@@ -19,6 +103,10 @@
 	background-repeat: no-repeat;
 }
 
+
+/*
+*	Large Display Styles
+*/
 
 @media screen and (min-width: 1024px) {
 	.hero{
@@ -47,10 +135,13 @@
 		text-align: center;
 		background-color: orange;
 		padding: 2rem;
+		-webkit-box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25); 
+		-moz-box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25); 
+		box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25);
 	}
 
-	.large-uncollapse {
-		background-color: grey;
+	.feed_container {
+		background-color: #f2f2f2;
 	}
 
 }
