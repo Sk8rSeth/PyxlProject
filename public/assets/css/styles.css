@@ -3,7 +3,7 @@
 */
 body {;
 	background-color: #f2f2f2;
-	font-family: "proxima-nova"
+	font-family: "proxima-nova";
 	font-size: 16px;
 	line-height: 20px;
 	color: #686b72;
@@ -42,6 +42,29 @@ h3 {
 	line-height: 20px; 
 	color: #000;
 	margin: 6px 0;
+}
+
+.hero {
+	background-image: url(/assets/img/big-ears-festival-2016-header.jpg);
+	background-size: cover;
+	height: 50rem;
+	background-position: center top;
+	position: relative;
+}
+
+.header {
+	padding-top: 35px;
+}
+
+.be_logo {
+	height: 20rem;
+	background-image: url(/assets/img/big-ears-2016-logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.be_slider {
+	height: 13rem;
 }
 
 .slider-next {
@@ -110,35 +133,23 @@ footer .social {
 }
 
 /*
-*	Mobile First Styles
+*	Mobile Styles That couldnt be active easily
 */
-.hero {
-	background-image: url(/assets/img/big-ears-festival-2016-header.jpg);
-	background-size: cover;
-	background-position: center top;
-	height: 50rem;
-	position: relative;
-}
+@media screen and (max-width: 1023px) {
 
-.header {
-	padding-top: 35px;
-}
+	.be_logo {
+		margin-top: 2rem;
+	}
 
-.be_logo {
-	height: 20rem;
-	background-image: url(/assets/img/big-ears-2016-logo.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
+	.be_slider {
+		margin-right: 23%;
+	}
 
-.be_slider {
-	height: 12rem;
-	margin-right: 20%;
-}
-
-.event_box img {
-	width: 100%;
-	padding: 4rem;
+	.event_box img {
+		width: 100%;
+		padding: 4rem;
+	}
+	
 }
 
 /*
@@ -195,13 +206,13 @@ footer .social {
 		margin: 0 2rem;
 	}
 
-	.item_block {
-		margin: 2rem 0;
-	}
-
 	.feed_container {
 		margin-top: -3rem;
 		margin-bottom: 1rem;
+	}
+
+	.item_block {
+		margin: 2rem 0;
 	}
 
 }
