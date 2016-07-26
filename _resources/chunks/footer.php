@@ -1,14 +1,16 @@
 <footer>
 	<div class="row align-middle">
-		<div class="small-6 small-centered large-uncentered large-2 columns"><h1>Stay Connected</h1></div>
-		<div class="email small-10 small-centered large-uncentered large-6 columns align-middle">
+		<div class="small-6 small-centered large-uncentered large-3 columns"><h1>Stay Connected</h1></div>
+		<div class="email small-10 small-centered large-uncentered large-5 columns align-middle">
 			<input type="email" value="Email Address" />
 		</div>
 		<a href="" class="button columns small-1 large-1">SIGN UP</a>
 
-		<div class="columns small-offset-4 small-3 large-1 large-offset-0 social fb"><img src="/assets/img/big-ears-facebook@2x.png" alt=""></div>
-		<div class="columns small-3 large-1 social tw"><img src="/assets/img/big-ears-twitter@2x.png" alt=""></div>
-		<div class="columns small-3 large-1 end social ig"><img src="/assets/img/big-ears-instagram@2x.png" alt=""></div>
+		<div class="columns small-offset-4 small-3 large-2 large-offset-0 social end">
+			<a href="" class="fb"></a>
+			<a href="" class="tw"></a>
+			<a href="" class="ig"></a>
+		</div>
 	</div>
 </footer>
 </body>
