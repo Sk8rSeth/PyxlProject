@@ -10,5 +10,12 @@
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<link rel="stylesheet" href="/assets/css/styles.css">
 
+	<!--[if gte IE 9]>
+	<style type="text/css">
+		.gradient {
+			filter: none;
+		}
+	</style>
+	<![endif]-->
 	
 </head>
