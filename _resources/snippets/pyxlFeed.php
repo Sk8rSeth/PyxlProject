@@ -27,8 +27,8 @@ if (!empty($url) && $modx->getService('rss', 'xmlrss.modRSSParser')) {
                     $item[$key] = str_replace(array('[',']'),array('&#91;','&#93;'),$item[$key]);
                 }
 
-                if (!empty($tpl)) {
-                    $output[] = $modx->getChunk($tpl, $item);
+                if (!empty($output_template)) {
+                    $output[] = $modx->getChunk($output_template, $item);
                 }
                 $itemIdx++;
                 if ($limit > 0 && $itemIdx+1 > $limit) break;
