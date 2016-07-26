@@ -16,6 +16,6 @@
 		</div>
 
 	<div class="feed_container row">
-		[[$feed]]
+		[[*content]]
 	</div>
 [[$footer]]
