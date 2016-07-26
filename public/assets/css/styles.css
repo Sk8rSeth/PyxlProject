@@ -47,16 +47,16 @@ h3 {
 .slider-next {
 	background-image: url(/assets/img/slider-arrow-right.png);
 	background-size: cover;
-	height: 2rem;
-	width: 2rem;
+	height: 4rem;
+	width: 4rem;
 	transition: background-image 1s;
 }
 
 .slider-previous {
 	background-image: url(/assets/img/slider-arrow-left.png);
 	background-size: cover;
-	height: 2rem;
-	width: 2rem;
+	height: 4rem;
+	width: 4rem;
 	transition: background-image 1s;
 }
 
@@ -90,7 +90,6 @@ footer input[type=email] {
 }
 
 footer .social {
-	/*height: 3rem;*/
 	width: 5rem;
 }
 
@@ -132,6 +131,16 @@ footer .social {
 	background-repeat: no-repeat;
 }
 
+.be_slider {
+	height: 12rem;
+	margin-right: 20%;
+}
+
+.event_box img {
+	width: 100%;
+	padding: 4rem;
+}
+
 /*
 *	Large Display Styles
 */
@@ -147,8 +156,12 @@ footer .social {
 
 	.be_slider {
 		border-left: 1px solid #fff;
-		height: 12rem;
 		padding-left: 2rem;
+	}
+
+	.slider-next, .slider-previous {
+		height: 2rem;
+		width: 2rem;
 	}
 
 	.event_container {
