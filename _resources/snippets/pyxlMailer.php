@@ -8,7 +8,9 @@ $sql = 'INSERT INTO `newsletter` (email) VALUES  (\''. $email_submission . '\')'
 $stmt = $modx->prepare($sql);
 $stmt->execute();
 
-$body = $modx->getChunk('pyxlSignup');
+$body = $modx->getChunk('pyxlSignup', array(
+	'email' => $email_submission
+	));
  
 $modx->getService('mail', 'mail.modPHPMailer');
 $modx->mail->set(modMail::MAIL_BODY,$body);
