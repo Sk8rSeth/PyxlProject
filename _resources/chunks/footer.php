@@ -1,12 +1,12 @@
 <footer>
 	<div class="row align-middle">
 		<div class="small-6 small-centered large-uncentered large-3 columns"><h1>Stay Connected</h1></div>
-		<div class="email small-10 small-centered large-uncentered large-5 columns align-middle">
+		<div class="email small-8 large-5 columns align-middle">
 			<input type="email" value="Email Address" />
 		</div>
-		<a href="" class="button columns small-1 large-1">SIGN UP</a>
+		<a href="" class="button columns small-3 large-1">SIGN UP</a>
 
-		<div class="columns small-offset-4 small-3 large-2 large-offset-0 social end">
+		<div class="columns small-8 large-2 social end">
 			<a href="" class="fb"></a>
 			<a href="" class="tw"></a>
 			<a href="" class="ig"></a>

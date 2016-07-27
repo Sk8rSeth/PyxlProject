@@ -213,6 +213,25 @@ footer .social a {
 	footer input[type=email] {
 		font-size: 3rem;
 		margin-bottom: 2rem;
+		width: 80%;
+		padding: 2.5rem 0;
+		float: right;
+	}
+
+	footer .button {
+		padding: 2rem 0 !important;
+		font-size: 3rem;
+	}
+
+	footer .social {
+		float: right !important;
+		margin-bottom: 2rem;
+		padding-left: 1rem;
+	}
+
+	footer .social a {
+		height: 5rem;
+		width: 5rem;
 	}
 
 }
