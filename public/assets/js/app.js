@@ -19,10 +19,14 @@ $(document).ready(function() {
 		e.preventDefault();
 
 		// make sure this is a real email
-		var emailRegex = '^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$'; 
+		var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i; 
 		var email = $('.email input').val();
-		if (email.match(emailRegex)) {
+		console.log(email);
+		var test = emailRegex.test(email);
+		console.log(test);
 
+		if (test) {
+			console.log('regex pass');
 			var sendData = {
 				email: email
 			}
@@ -39,8 +43,9 @@ $(document).ready(function() {
 			});
 			$('.email input').effect("highlight", {color: '#22ee5b'}, 2000);
 			$('.email input').val('');
-		} 
-		$('.email input').effect("highlight", {color: '#e13737'}, 2000);
+		} else {
+			$('.email input').effect("highlight", {color: '#e13737'}, 2000);
+		}
 	});
 	
 });
