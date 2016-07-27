@@ -7,8 +7,6 @@ $email_submission = $_POST['email'];
 $sql = 'INSERT INTO `newsletter` (email) VALUES  (\''. $email_submission . '\')';
 $stmt = $modx->prepare($sql);
 $stmt->execute();
-return $sql;
-
 
 $body = $modx->getChunk('pyxlSignup');
  
@@ -19,6 +17,7 @@ $modx->mail->set(modMail::MAIL_SUBJECT,'Newsletter Signup');
 $modx->mail->address('to','webdev.seth@gmail.com');
 $modx->mail->address('reply-to','me@xexample.org');
 $modx->mail->setHTML(true);
+$modx->mail->SMTPSecure = 'ssl';
 if (!$modx->mail->send()) {
 	return 'failed yo --- '.$modx->mail->mailer->ErrorInfo;
     $modx->log(modX::LOG_LEVEL_ERROR,'An error occurred while trying to send the email: '.$modx->mail->mailer->ErrorInfo);

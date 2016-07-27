@@ -21,16 +21,12 @@ $(document).ready(function() {
 		// make sure this is a real email
 		var emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i; 
 		var email = $('.email input').val();
-		console.log(email);
 		var test = emailRegex.test(email);
-		console.log(test);
-
 		if (test) {
-			console.log('regex pass');
 			var sendData = {
 				email: email
 			}
-			console.log(sendData);
+
 			var link = $(this).attr('href');
 			//AJAX CALL
 			$.ajax({
@@ -41,6 +37,8 @@ $(document).ready(function() {
 					console.log(returnData);
 				}
 			});
+
+			// UI effect and empty input
 			$('.email input').effect("highlight", {color: '#22ee5b'}, 2000);
 			$('.email input').val('');
 		} else {
