@@ -1,0 +1,314 @@
+/*
+*	Normalization
+*/
+body {;
+	background-color: #f2f2f2;
+	font-family: "proxima-nova";
+	font-size: 16px;
+	line-height: 20px;
+	color: #686b72;
+}
+
+a {
+	color: #7f873f;
+	transition: border-bottom 1s;
+}
+
+a:not(>img):hover {
+	color: #4c5438;
+	border-bottom: 1px solid #4c5438;
+}
+
+h1 {
+	font-family: "nimbus-sans-condensed";
+	font-size: 32px;
+	line-height: 37px; 
+	color: #000;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-family: "nimbus-sans-condensed";
+	font-size: 24px;
+	line-height: 27px; 
+	color: #000;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-family: "proxima-nova";
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px; 
+	color: #000;
+	margin: 6px 0;
+}
+
+.hero {
+	background-image: url(/assets/img/big-ears-festival-2016-header.jpg);
+	background-size: cover;
+	height: 50rem;
+	background-position: center top;
+	position: relative;
+}
+
+.header {
+	padding-top: 35px;
+}
+
+.be_logo {
+	height: 20rem;
+	background-image: url(/assets/img/big-ears-2016-logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.be_slider {
+	height: 13rem;
+}
+
+.slider-next {
+	background-image: url(/assets/img/slider-arrow-right.png);
+	background-size: cover;
+	height: 4rem;
+	width: 4rem;
+	transition: background-image 1s;
+}
+
+.slider-previous {
+	background-image: url(/assets/img/slider-arrow-left.png);
+	background-size: cover;
+	height: 4rem;
+	width: 4rem;
+	transition: background-image 1s;
+}
+
+.slider-next:hover {
+	background-image: url(/assets/img/slider-arrow-right-hover.png);
+}
+
+.slider-previous:hover {
+	background-image: url(/assets/img/slider-arrow-left-hover.png);
+}
+
+.bird_left img, .bird_right img {
+	max-height: 130%;
+	max-width: 130%;
+}
+
+.item {
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.item_block {
+	margin: 2rem 0;
+}
+
+footer {
+	background-image: url(/assets/img/big-ears-splash-footer.jpg);
+	background-size: cover;
+	padding: 25px;
+}
+
+footer input[type=email] {
+	color: #686b72;
+	background-color: #f2f2f2;
+	border: 1px solid #fff;
+	padding: 20px 15px;
+	font-size: 1.2rem;
+	outline: none;
+	-webkit-appearance: none; 
+	box-shadow: none !important;
+}
+
+.email {
+	padding: 0 !important;
+}
+
+footer .social {
+	margin: 0 1rem;
+}
+
+footer .social a {
+	background-size: cover;
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	transition: background-image 1s;
+	margin: 0 .2rem;
+}
+
+.fb {
+	background-image: url(/assets/img/big-ears-facebook@2x.png);
+}
+
+.fb:hover {
+	background-image: url(/assets/img/big-ears-facebook-hover@2x.png);
+}
+
+.tw {
+	background-image: url(/assets/img/big-ears-twitter@2x.png);
+}
+
+.tw:hover {
+	background-image: url(/assets/img/big-ears-twitter-hover@2x.png);
+}
+
+.ig {
+	background-image: url(/assets/img/big-ears-instagram@2x.png);
+}
+
+.ig:hover {
+	background-image: url(/assets/img/big-ears-instagram-hover@2x.png);
+}
+
+.button {
+	font-family: "nimbus-sans-condensed", courier;
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	background-color: #7f873f;
+	border: 1px solid #fff;
+	padding: 10px 15px !important;
+	transition: background-color 1s;
+}
+
+.button:hover {
+	background-color: #4c5438;
+}
+
+/*
+*	Mobile Styles That couldnt be active easily
+*/
+@media screen and (max-width: 1023px) {
+
+	h1 {
+		font-size: 4rem;
+		padding: 4rem 0;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	.be_logo {
+		margin-top: 2rem;
+	}
+
+	.be_slider {
+		margin-right: 23%;
+	}
+
+	.event_box img {
+		width: 100%;
+		padding: 4rem;
+		padding-bottom: 0;
+	}
+
+	.feed_container {
+		margin: 2rem;
+		font-size: 2rem;
+	}
+
+	footer input[type=email] {
+		font-size: 3rem;
+		margin-bottom: 2rem;
+		width: 80%;
+		padding: 2.5rem 0;
+		float: right;
+	}
+
+	footer .button {
+		padding: 2rem 0 !important;
+		font-size: 3rem;
+	}
+
+	footer .social {
+		float: right !important;
+		margin-bottom: 2rem;
+		padding-left: 1rem;
+	}
+
+	footer .social a {
+		height: 5rem;
+		width: 5rem;
+	}
+
+}
+
+/*
+*	Large Display Styles
+*/
+
+@media screen and (min-width: 1024px) {
+	/*
+	*	gradient support
+	*/
+	.event_box {
+		background: #ffffff; /* Old browsers */
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-8 */
+	}
+
+	.hero{
+		height: 24rem;
+	}
+
+	.header {
+		height: 20rem;
+	}
+
+	.be_slider {
+		border-left: 1px solid #fff;
+		padding-left: 2rem;
+	}
+
+	.slider-next, .slider-previous {
+		height: 2rem;
+		width: 2rem;
+	}
+
+	.event_container {
+		height: 10rem;
+		transform: translatey(-60%);
+	}
+
+	.bird_left {
+		position: absolute;
+		top: 0;
+		left: 1rem;
+	}
+
+	.bird_right {
+		position: absolute;
+		top: 0;
+		right: 1rem;
+	}
+
+	.event_box {
+		text-align: center;
+		padding: 2rem;
+		-webkit-box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25); 
+		-moz-box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25); 
+		box-shadow: 0px -12px 20px 0px rgba(0,0,0,0.25);
+		height: 10rem;
+	}
+
+	.event_box img {
+		margin: 0 2rem;
+	}
+
+	.feed_container {
+		margin-top: -3rem;
+		margin-bottom: 2rem;
+	}
+
+	footer h1 {
+		text-align: center;
+	}
+
+}
